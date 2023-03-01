@@ -1,0 +1,140 @@
+body {
+  margin: 20px 40px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 16px;
+}
+
+/*--- This is the CSS class for the green rectangular blocks. Note that it uses display: flex ---*/
+
+.wrapper {
+  display: flex;
+  height: 60px;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+/*--- flex: 1 makes it so that the div takes up all available space left in the parent element ---*/
+
+.redExample {
+  flex: 1;
+  background-color: red;
+}
+
+/*--- Since both .redExample and .blueExample have flex: 1, they will take up an equal amount of space because they meet in the middle ---*/
+
+.blueExample {
+  flex: 1;
+  background-color: blue;
+}
+
+/*--- flex-direction: row-reverse orders all child elements starting from right to left ---*/
+
+.emptyExample2 {
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+}
+
+.blueExample2 {
+  width: 80px;
+  background-color: blue;
+}
+
+/* TODO: Add CSS for the rest of your solution below */
+.emptyExample3 {
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.redExample3 {
+  width: 80px;
+  background-color: red;
+}
+
+.redExample4 {
+  flex: 1;
+  background-color: red;
+  flex-grow: 4;
+}
+
+.wrapperExample5 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.redExample5 {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+
+.blueExample6 {
+  width: 80px;
+  height: 60px;
+  background-color: blue;
+}
+
+.redExample6 {
+  flex: 1;
+  background-color: red;
+}
+
+.wrapperExample7 {
+  flex: 1;
+  flex-direction: column;
+  align-content: flex-end;
+  background-color: transparent;
+}
+
+.redExample7 {
+  width: 80px;
+  height: 60px;
+  background-color: red;
+}
+
+.blueExample7 {
+  height: 20px;
+  background-color: blue;
+}
+
+.blue2Example7 {
+  height: 20px;
+  /* align-self: flex-end; */
+  background-color: blue;
+}
+
+.separatorExample7 {
+  height: 20px;
+  background-color: transparent;
+}
+
+.orangeExample8 {
+  width: 80px;
+  height: 60px;
+  background-color: orange;
+}
+
+.greenExample8 {
+  flex: 1;
+  background-color: green;
+}
+
+.orangeExample9 {
+  flex: 1;
+  background-color: orange;
+}
+
+.greenExample9 {
+  width: 20px;
+  height: 60px;
+  background-color: green;
+}

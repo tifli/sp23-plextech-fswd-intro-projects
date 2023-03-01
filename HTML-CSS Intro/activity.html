@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="HTML/CSS project">
+        <meta name="author" content="Tiffany Li">
+        <link rel="stylesheet" href="styles.css">
+        <title>Look at favicon</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    </head>
+    <body id="bodyID">
+        <div class="header" id="headerID">
+            <h1>Header :D</h1>
+            <div class="buttonContainer">
+                <button onclick="dark()">Dark mode</button>
+                <button onclick="light()">Light mode</button>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="container">
+            <div class="aside" id="asideID">
+                <h1>Aside</h1>
+            </div>
+            <div class="article" id="articleID">
+                <h1>Article</h1>
+                <div class="imageContainer">
+                    <div class="image" id="imageID1"><h1></h1></div>
+                    <div class="secondImage" id="imageID2"><h1></h1></div>
+                    <div class="thirdImage" id="imageID3"><h1></h1></div>
+                    <!-- <img class="image1 image-contain" src="./images/testing.png" />
+                    <img class="image1 image-contain" src="./images/testing2.png" />
+                    <img class="image1 image-contain" src="./images/testing3.png" /> -->
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="header" id="footerID">
+            <h1>Footer</h1>
+        </div>
+
+        <!-- Script -->
+        <script>
+            function dark() {
+                var bodyColor = document.getElementById("bodyID");
+                bodyColor.style.backgroundColor = "#73A5c6";
+
+                var headerColor = document.getElementById("headerID");
+                headerColor.style.color="#FFFFFF";
+                headerColor.style.backgroundColor = "#036";
+
+                var footerColor = document.getElementById("footerID");
+                footerColor.style.color="#FFFFFF";
+                footerColor.style.backgroundColor = "#036";
+
+                var asideColor = document.getElementById("asideID");
+                asideColor.style.color="#FFFFFF";
+                asideColor.style.backgroundColor = "#023020";
+
+                var articleColor = document.getElementById("articleID");
+                articleColor.style.color="#FFFFFF";
+                articleColor.style.backgroundColor = "#8B4000";
+
+                var imageColor = document.getElementById("imageID1");
+                imageColor.style.color="#FFFFFF";
+                imageColor.style.backgroundColor = "#AB784E";
+
+                var imageColor = document.getElementById("imageID2");
+                imageColor.style.color="#FFFFFF";
+                imageColor.style.backgroundColor = "#AB784E";
+
+                var imageColor = document.getElementById("imageID3");
+                imageColor.style.color="#FFFFFF";
+                imageColor.style.backgroundColor = "#AB784E";
+            }
+            function light() {
+                var bodyColor = document.getElementById("bodyID");
+                bodyColor.style.backgroundColor = "#E0FFFF";
+
+                var headerColor = document.getElementById("headerID");
+                headerColor.style.color="#000000";
+                headerColor.style.backgroundColor = "#30D5C8";
+
+                var footerColor = document.getElementById("footerID");
+                footerColor.style.color="#000000";
+                footerColor.style.backgroundColor = "#30D5C8";
+
+                var asideColor = document.getElementById("asideID");
+                asideColor.style.color="#000000";
+                asideColor.style.backgroundColor = "#90EE90";
+
+                var articleColor = document.getElementById("articleID");
+                articleColor.style.color="#000000";
+                articleColor.style.backgroundColor = "#FFA500";
+
+                var imageColor = document.getElementById("imageID1");
+                imageColor.style.color="#000000";
+                imageColor.style.backgroundColor = "#ffebcd";
+
+                var imageColor = document.getElementById("imageID2");
+                imageColor.style.color="#000000";
+                imageColor.style.backgroundColor = "#ffebcd";
+
+                var imageColor = document.getElementById("imageID3");
+                imageColor.style.color="#000000";
+                imageColor.style.backgroundColor = "#ffebcd";
+            }
+        </script>
+    </body>
+</html>
